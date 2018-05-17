@@ -24,7 +24,7 @@
 
   "files":
   [
-    {"includePattern": "target/scala(.*)*/(.*\\.jar)"}
+    {"includePattern": "target/scala-2.12/(.*\\.jar)"}
   ],
   "publish": true
 }
