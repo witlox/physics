@@ -12,7 +12,7 @@
     "licenses": ["LGPLv3"],
     "labels": ["Scala", "Physics", "Library"],
     "public_download_numbers": false,
-    "public_stats": false,
+    "public_stats": false
   },
 
   "version": {
