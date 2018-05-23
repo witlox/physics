@@ -4,7 +4,11 @@ lazy val root = (project in file(".")).
   settings(
     name := "physics",
     version := "0.1.0",
-    scalaVersion := "2.12.1"
+    scalaVersion := "2.12.1",
+    coverageMinimum := 50,
+    coverageFailOnMinimum := false,
+    coverageHighlighting := true,
+    publishArtifact in Test := false
   )
 
 
@@ -15,3 +19,4 @@ libraryDependencies ++= Seq(
 lazy val defaultSettings = Defaults.coreDefaultSettings ++ Seq(
   resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 )
+
