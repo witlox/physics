@@ -2,10 +2,14 @@ language: scala
 scala:
 - 2.12.1
 script:
-- sbt ++$TRAVIS_SCALA_VERSION clean coverage test coverageReport assembly && sbt ++$TRAVIS_SCALA_VERSION coverageAggregate
+- sbt ++$TRAVIS_SCALA_VERSION clean coverage test coverageReport assembly && sbt ++$TRAVIS_SCALA_VERSION
+  coverageAggregate
+env:
+  global:
+    secure: vdLt9Xx1o4NS60n8zfcMmyp8BbtR5OIwfpOYipFSdIVdjEiCTkoo8IJOCi16tZsUN7PpAvhmxrjBsyKtJrw0SCCtAqZiEfYbSs+fVUTOno3Ut571xlmu8tHP4LzWAjCsc+7QsTpQi7TxqlI8LXmCmij2B2OAnFotBjddAQBc9zYHEAHVg9U+9Ing7ZRbuDVZmeYlft3aVKtDQiE6+QUUQ3BR6eAteEl/xj1LkT7YmylkKZktZS659YWUUDyqsUskeB7S3HDFKbR/ozrLEfyPoqoQgv8K/Fzok4AQqVpAy+3MyhJNk9ZQ+jvbCNPNBH7Bj+VTtlONG3iDhCaDLyRc49Q6HJxSgBIzUFehgg6132vqStSpUv7Sa8sCVkzrGUHZf5yu1iEer02TWp0HpLR/PxCJqreuZ+e96oi91UukVR17Sn5pzcNp3bDELx1wNM/j+DxYrykMsJnlxYlGpVfMp0Z5Ol7HCKLomvWNCFHsnuEN5Z7XzebX8vzH+8G6VAfc/C4flgxWw5vfxb3o7eYXRwwS+2jAiTzi4zHvOJHOFOzhnWxSSNvjXC92MUqA2eJNiEqzmTDvWk6pe33YTcgD+j6CLoeodjf+dgnnGAm1oszN1JlFX3Hg8fymZOxDSDTfkABLhAf9M9tv+uknCGzsiMRAe2AnGqeU4A9P3hAO74U=
 deploy:
   provider: bintray
-  file: .bintray.json
+  file: ".bintray.json"
   user: witlox
   skip_cleanup: true
   key:
