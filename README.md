@@ -1,4 +1,4 @@
-# io.witlox.physics [![Build Status](https://travis-ci.org/witlox/physics.svg?branch=master)](https://travis-ci.org/witlox/physics) [![Coverage Status](https://coveralls.io/repos/github/witlox/physics/badge.svg?branch=master)](https://coveralls.io/github/witlox/physics?branch=master) [ ![Download](https://api.bintray.com/packages/witlox/sbt-libraries/io.witlox.physics/images/download.svg?version=0.1.0) ](https://bintray.com/witlox/sbt-libraries/io.witlox.physics/0.1.0/link)
+# io.witlox.physics [![Build Status](https://travis-ci.org/witlox/physics.svg?branch=master)](https://travis-ci.org/witlox/physics) [![Coverage Status](https://coveralls.io/repos/github/witlox/physics/badge.svg?branch=master)](https://coveralls.io/github/witlox/physics?branch=master) 
 
 Scala implementation for doing basic physics equations. Implicit and explicit conversion.
 
