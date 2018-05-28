@@ -19,6 +19,5 @@ deploy:
   file: target/scala*/**/*.jar
   on:
     repo: witlox/physics
-    tags: true
 after_success:
 - sbt ++$TRAVIS_SCALA_VERSION coverageReport coveralls
