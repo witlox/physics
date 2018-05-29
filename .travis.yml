@@ -16,8 +16,8 @@ deploy:
   api_key:
     secure: hXdIoL7MCioWHicvTV1sS3Mm1BOzotp0hSv4mIu1OQdcp5gIwhGjuBmxUqRoQtvAZqdsGRvNxwsI0oALVnlU9R6oLGPsDwLvLqqPWjCttNwlYSLMhaXVKNKyZzOHT1o7ICVkEvp7gJfQIYviohhAReFXCSTSm+HBb0L+4blKnqEqMoa6GN6jKm948AM5FRi8KvNSdANwLixC6WbM5l8nNDIj1z/GcB+hRGsoCSbeEPCxDS7xBY0z/FzPfWxORbbpMmOvT9iMxz2SuaabM1g/UtHNcIIwV+dgSEC0JGBxVncBW0z61rkYnrWTBn/STWsSwkHhvDsFW1E2Ou9neOQDv7Dw1wollnEhoNtBkody7wyPhGU0uvz2k4SOhddHL3q5HNJ/1Dn9jyzKzxsXdh8H+jlaxiC8Ep4ScmxXLYawUlZq7rS5FnpOMw2aD95/wupbcGIKK+2PF16X+nJZs9aVdP804QngE/xmWUFWrTst/1sTdxvvuilBcka8DCAe/CyGnyBEaQxkbx/6oIyFxupQV/ugA6GDd3HO6+uxJEPbNfjW+aEeNwpC26oyXMBaG65w/LOkpenzcd4LqYIleW7lWCGoerWUKKLTmw2GFdCVPhdR4i0Ej/Y4vhrDXgO6eOVOIGkgkiIHxPkA8IAhzExXAlEIQly4yEl0VQSwK7cBhGY=
   file_glob: true
-  file: target/scala*/**/*.jar
+  file: "*/target/**/*.jar"
   on:
-    repo: witlox/physics
+    tags: true
 after_success:
 - sbt ++$TRAVIS_SCALA_VERSION coverageReport coveralls
