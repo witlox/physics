@@ -14,3 +14,9 @@ val hc = 4.184 * J/g
 val Q = mass * s(10) * (hc * 30)
 Q should be (kcal(300) +- kcal(1))
 ```
+
+"Inferring a unit from a string" can be expressed as follows:
+ 
+```scala
+Chemical.spoon("1000 mmol").get should be (mol)
+```
