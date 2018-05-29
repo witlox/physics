@@ -14,3 +14,9 @@ val hc = 4.184 * J/g
 val Q = mass * s(10) * (hc * 30)
 Q should be (kcal(300) +- kcal(1))
 ```
+
+"Inferring a unit from a string" should "be a thing we can do" can be expressed as follows:
+ 
+```scala
+Angle.spoon("1 krad").get should be (krad)
+```
