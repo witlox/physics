@@ -19,5 +19,6 @@ deploy:
   file: "*/target/**/*.jar"
   on:
     tags: true
+  skip_cleanup: true
 after_success:
 - sbt ++$TRAVIS_SCALA_VERSION coverageReport coveralls
