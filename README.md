@@ -1,4 +1,5 @@
-# io.witlox.physics [![Build Status](https://travis-ci.org/witlox/physics.svg?branch=master)](https://travis-ci.org/witlox/physics) [![Coverage Status](https://coveralls.io/repos/github/witlox/physics/badge.svg?branch=master)](https://coveralls.io/github/witlox/physics?branch=master) 
+# io.witlox.physics [![Build Status](https://travis-ci.org/witlox/physics.svg?branch=master)](https://travis-ci.org/witlox/physics) [![Coverage Status](https://coveralls.io/repos/github/witlox/physics/badge.svg?branch=master)](https://coveralls.io/github/witlox/physics?branch=master) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwitlox%2Fphysics.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwitlox%2Fphysics?ref=badge_shield)
+
 
 Scala implementation for doing basic physics equations. Implicit and explicit conversion.
 
@@ -20,3 +21,7 @@ Q should be (kcal(300) +- kcal(1))
 ```scala
 Chemical.spoon("1000 mmol").get should be (mol)
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwitlox%2Fphysics.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwitlox%2Fphysics?ref=badge_large)
